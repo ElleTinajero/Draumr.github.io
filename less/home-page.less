@@ -1,0 +1,87 @@
+.top-section {
+  position: relative;
+  background: url("../img/overlay2.jpg") no-repeat bottom center/cover;
+  height: 600px;
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    .top-section-inner {
+      color: white;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin: auto;
+      max-width: 860px;
+      padding: 5rem 0;
+      background-color: transparent;
+
+      h2 {
+        font-size: 4rem;
+        color: rgba(255, 255, 255, 0.8);
+        background-color: transparent;
+      }
+
+      h3 {
+        font-size: 2rem;
+        text-decoration: underline;
+        color: rgba(255, 255, 255, 0.7);
+        margin-top: 1rem;
+        background-color: transparent;
+      }
+
+      p {
+        font-size: 1rem;
+        color: rgba(255, 255, 255, 0.7);
+        margin-top: 1rem;
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.main-section {
+  margin: 2rem 0;
+
+  .main-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+    color: @white;
+  }
+
+  p {
+    font-size: 1rem;
+    color: @white;
+    padding: 1rem 0;
+  }
+
+  .btn {
+    display: inline-block;
+    background: #888;
+    color: @almost-black;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    border-radius: 30px;
+  }
+
+  .btn:hover {
+    background: @darkgray;
+  }
+}
