@@ -183,6 +183,16 @@ img {
 .navbar .nav-container .nav a:hover {
   color: #777;
 }
+footer {
+  border-top: 1px solid silver;
+  height: 8rem;
+}
+footer p {
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+  padding: 50px;
+}
 .top-section {
   position: relative;
   background: url("../img/overlay2.jpg") no-repeat bottom center / cover;
@@ -258,4 +268,95 @@ img {
 }
 .main-section .btn:hover {
   background: #444;
+}
+.bottom-section {
+  margin: 2rem 0;
+}
+.bottom-section .bottom-container {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.bottom-section .bottom-container .bottom-left-section {
+  position: relative;
+  background: url("../img/vrstock.png") no-repeat bottom center / cover;
+  height: 500px;
+  margin-left: 5rem;
+}
+.bottom-section .bottom-container .bottom-left-section .bottom-left-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.bottom-section .bottom-container .bottom-left-section .bottom-left-overlay .bottom-left-overlay-inner {
+  color: white;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: top;
+  margin: auto;
+  max-width: 860px;
+  padding: 5rem 0;
+  background-color: transparent;
+}
+.bottom-section .bottom-container .bottom-left-section .bottom-left-overlay .bottom-left-overlay-inner h3 {
+  font-size: 2rem;
+  text-decoration: underline;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 1rem;
+  background-color: transparent;
+}
+.bottom-section .bottom-container .bottom-left-section .bottom-left-overlay .bottom-left-overlay-inner p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 1rem;
+  background-color: transparent;
+}
+.bottom-section .bottom-container .bottom-right-section {
+  position: relative;
+  background: url("../img/blackvr.png") no-repeat bottom center / cover;
+  height: 500px;
+  margin-right: 5rem;
+}
+.bottom-section .bottom-container .bottom-right-section .bottom-right-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.bottom-section .bottom-container .bottom-right-section .bottom-right-overlay .bottom-right-overlay-inner {
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  max-width: 860px;
+  padding: 5rem 0;
+  background-color: transparent;
+}
+.bottom-section .bottom-container .bottom-right-section .bottom-right-overlay .bottom-right-overlay-inner h3 {
+  font-size: 2rem;
+  text-decoration: underline;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 1rem;
+  background-color: transparent;
+}
+.bottom-section .bottom-container .bottom-right-section .bottom-right-overlay .bottom-right-overlay-inner p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 1rem;
+  background-color: transparent;
 }

@@ -85,3 +85,106 @@
     background: @darkgray;
   }
 }
+
+.bottom-section {
+  margin: 2rem 0;
+
+  .bottom-container {
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+
+    .bottom-left-section {
+      position: relative;
+      background: url("../img/vrstock.png") no-repeat bottom center/cover;
+      height: 500px;
+      margin-left: 5rem;
+
+      .bottom-left-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+
+        .bottom-left-overlay-inner {
+          color: white;
+          height: 20%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: top;
+          margin: auto;
+          max-width: 860px;
+          padding: 5rem 0;
+          background-color: transparent;
+
+          h3 {
+            font-size: 2rem;
+            text-decoration: underline;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 1rem;
+            background-color: transparent;
+          }
+
+          p {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 1rem;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+
+    .bottom-right-section {
+      position: relative;
+      background: url("../img/blackvr.png") no-repeat bottom center/cover;
+      height: 500px;
+      margin-right: 5rem;
+
+      .bottom-right-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+
+        .bottom-right-overlay-inner {
+          color: white;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          margin: auto;
+          max-width: 860px;
+          padding: 5rem 0;
+          background-color: transparent;
+
+          h3 {
+            font-size: 2rem;
+            text-decoration: underline;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 1rem;
+            background-color: transparent;
+          }
+
+          p {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 1rem;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+}
