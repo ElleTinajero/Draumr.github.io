@@ -237,7 +237,7 @@ footer .footer-content .footer-inner .footer-bar1 a {
   padding-bottom: 5px;
 }
 footer .footer-content .footer-inner .footer-bar1 a:hover {
-  color: aquamarine;
+  color: #40e0d0;
 }
 footer .footer-content .footer-inner .footer-bar2 {
   width: calc(21.66666667% - 20px);
@@ -266,7 +266,7 @@ footer .footer-content .footer-inner .footer-bar2 a {
   padding-bottom: 5px;
 }
 footer .footer-content .footer-inner .footer-bar2 a:hover {
-  color: aquamarine;
+  color: #40e0d0;
 }
 footer .footer-content .footer-inner .footer-bar3 {
   width: calc(21.66666667% - 20px);
@@ -295,7 +295,7 @@ footer .footer-content .footer-inner .footer-bar3 a {
   padding-bottom: 5px;
 }
 footer .footer-content .footer-inner .footer-bar3 a:hover {
-  color: aquamarine;
+  color: #40e0d0;
 }
 footer .footer-content .footer-inner .footer-bar3 li {
   display: inline-block;
@@ -392,7 +392,7 @@ footer p {
   border-radius: 30px;
 }
 .main-section .btn:hover {
-  background: #444;
+  background: #40e0d0;
 }
 .bottom-section {
   margin: 2rem 0;
