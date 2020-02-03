@@ -12,10 +12,18 @@
     padding: 0 2rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    @media @mobile {
+      grid-template-columns: 100%;
+      padding: 2rem;
+    }
 
     .logo {
       font-size: 3rem;
       color: @white;
+      @media @mobile {
+        text-align: center;
+        padding: 1rem;
+      }
     }
 
     .nav {
@@ -24,6 +32,9 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      @media @mobile {
+        justify-self: auto;
+      }
 
       a {
         color: @white;

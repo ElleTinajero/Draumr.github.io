@@ -57,11 +57,16 @@
     grid-gap: 3rem;
     align-items: center;
     justify-content: center;
+    @media @mobile {
+      display: flex;
+      flex-wrap: wrap-reverse;
+    }
   }
 
   h1 {
     font-size: 2.8rem;
     color: @white;
+    padding: 1rem;
   }
 
   p {
@@ -79,6 +84,9 @@
     cursor: pointer;
     font-size: 0.8rem;
     border-radius: 30px;
+    @media @mobile {
+      margin-bottom: 1.5rem;
+    }
   }
 
   .btn:hover {
@@ -96,6 +104,10 @@
     grid-gap: 1.5rem;
     align-items: center;
     justify-content: center;
+    @media @mobile {
+      display: flex;
+      flex-wrap: wrap;
+    }
 
     .bottom-left-section {
       position: relative;
@@ -188,3 +200,5 @@
     }
   }
 }
+
+//BEGINNING OG TEAMPAGE
