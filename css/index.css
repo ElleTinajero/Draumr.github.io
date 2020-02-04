@@ -445,59 +445,74 @@ footer p {
 .bottom-container {
   width: 100%;
   margin: 2rem 0;
+  box-sizing: border-box;
+  padding: 50px;
   display: flex;
   justify-content: space-around;
-  border: solid yellow;
 }
 .bottom-container .bottom-left-section {
-  width: 45%;
+  width: 40%;
   position: relative;
   display: flex;
   flex: 1;
   transition: 0.6s ease-out;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
-  border: solid green;
+}
+.bottom-container .bottom-left-section .bottom-left-overlay {
+  align-items: center;
+  text-align: center;
 }
 .bottom-container .bottom-left-section .bottom-left-overlay h3 {
+  font-size: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
   color: #fff;
 }
 .bottom-container .bottom-left-section .bottom-left-overlay p {
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.1);
   color: #fff;
 }
 .bottom-container .bottom-left-section:hover {
   transform: translateY(15px);
 }
-.bottom-container .bottom-left-section:hover:before {
-  opacity: 1;
-}
-.bottom-container .bottom-left-section:hover:before .bottom-left-overlay {
+.bottom-container .bottom-left-section:hover .bottom-left-overlay {
   opacity: 1;
   transform: translateY(0);
 }
+.bottom-container .bottom-left-section:hover:before {
+  opacity: 1;
+}
 .bottom-container .bottom-right-section {
-  width: auto;
+  width: 40%;
   position: relative;
   display: flex;
   flex: 1;
   transition: 0.6s ease-out;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
-  border: solid red;
+}
+.bottom-container .bottom-right-section .bottom-right-overlay {
+  align-items: center;
+  text-align: center;
 }
 .bottom-container .bottom-right-section .bottom-right-overlay h3 {
+  font-size: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
   color: #fff;
 }
 .bottom-container .bottom-right-section .bottom-right-overlay p {
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.1);
   color: #fff;
 }
 .bottom-container .bottom-right-section:hover {
   transform: translateY(15px);
 }
+.bottom-container .bottom-right-section:hover .bottom-right-overlay {
+  opacity: 0.4;
+  transform: translateY(0);
+}
 .bottom-container .bottom-right-section:hover:before {
   opacity: 1;
-}
-.bottom-container .bottom-right-section:hover:before .bottom-right-overlay {
-  opacity: 1;
-  transform: translateY(0);
 }
 .bottom-container .bottom-right-section:before {
   content: "";
@@ -519,4 +534,10 @@ footer p {
   top: 0;
   left: 0;
   object-fit: cover;
+}
+.teampage-body {
+  box-sizing: border-box;
+}
+.teampage-body .team {
+  display: flex;
 }
