@@ -211,9 +211,9 @@ img {
   color: #1c1e20;
 }
 footer {
-  margin-top: 8rem;
+  margin-top: 4rem;
   border-top: 1px solid silver;
-  height: 8rem;
+  height: auto;
 }
 footer .footer-content {
   display: block;
@@ -534,6 +534,11 @@ footer p {
   left: 0;
   object-fit: cover;
 }
+.teampage-title {
+  color: #fff;
+  text-align: center;
+  margin: 5rem 0;
+}
 .teampage-body {
   box-sizing: border-box;
 }
@@ -543,7 +548,6 @@ footer p {
   justify-content: center;
   width: 100%;
   height: 100%;
-  border: solid red;
 }
 .teampage-body .team .team-container {
   display: flex;
@@ -583,14 +587,19 @@ footer p {
 .teampage-body .team .team-container .team-card .box h4 {
   margin: 0;
   font-family: sans-serif;
-  font-size: 32px;
+  font-size: 28px;
+  background-color: rgba(255, 255, 255, 0);
 }
 .teampage-body .team .team-container .team-card .box h5 {
+  font-size: 20px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin-bottom: 4px;
 }
 .teampage-body .team .team-container .team-card .box p {
   letter-spacing: 1px;
+}
+.teampage-body .team .team-container .team-card .box a {
+  font-size: 20px;
 }
 .teampage-body .team .team-container .team-card .box a:hover {
   color: #40e0d0;
@@ -599,11 +608,12 @@ footer p {
   transform: translateY(15px);
 }
 .teampage-body .team .team-container .team-card:hover .box {
-  opacity: 1;
+  opacity: 0.7;
   transform: translateY(0);
+  border-radius: 10px;
 }
 .teampage-body .team .team-container .team-card:hover:before {
-  opacity: 1;
+  opacity: 0.8;
 }
 .teampage-body .team .team-container .team-card:before {
   content: "";
