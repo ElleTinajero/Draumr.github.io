@@ -442,100 +442,81 @@ footer p {
 .main-section .btn:hover {
   background: #40e0d0;
 }
-.bottom-section {
+.bottom-container {
+  width: 100%;
   margin: 2rem 0;
+  display: flex;
+  justify-content: space-around;
+  border: solid yellow;
 }
-.bottom-section .bottom-container {
-  margin: 2rem 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1.5rem;
-  align-items: center;
-  justify-content: center;
-}
-@media (max-width: 500px) {
-  .bottom-section .bottom-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-.bottom-section .bottom-container .bottom-left-section {
+.bottom-container .bottom-left-section {
+  width: 45%;
   position: relative;
-  background: url("../img/vrstock.png") no-repeat bottom center / cover;
-  height: 500px;
-  margin-left: 5rem;
+  display: flex;
+  flex: 1;
+  transition: 0.6s ease-out;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  border: solid green;
 }
-.bottom-section .bottom-container .bottom-left-section .bottom-left-overlay {
+.bottom-container .bottom-left-section .bottom-left-overlay h3 {
+  color: #fff;
+}
+.bottom-container .bottom-left-section .bottom-left-overlay p {
+  color: #fff;
+}
+.bottom-container .bottom-left-section:hover {
+  transform: translateY(15px);
+}
+.bottom-container .bottom-left-section:hover:before {
+  opacity: 1;
+}
+.bottom-container .bottom-left-section:hover:before .bottom-left-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+.bottom-container .bottom-right-section {
+  width: auto;
+  position: relative;
+  display: flex;
+  flex: 1;
+  transition: 0.6s ease-out;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  border: solid red;
+}
+.bottom-container .bottom-right-section .bottom-right-overlay h3 {
+  color: #fff;
+}
+.bottom-container .bottom-right-section .bottom-right-overlay p {
+  color: #fff;
+}
+.bottom-container .bottom-right-section:hover {
+  transform: translateY(15px);
+}
+.bottom-container .bottom-right-section:hover:before {
+  opacity: 1;
+}
+.bottom-container .bottom-right-section:hover:before .bottom-right-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+.bottom-container .bottom-right-section:before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
+  display: block;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  background: linear-gradient(top, #000, transparent);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
 }
-.bottom-section .bottom-container .bottom-left-section .bottom-left-overlay .bottom-left-overlay-inner {
-  color: white;
-  height: 20%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: top;
-  margin: auto;
-  max-width: 860px;
-  padding: 5rem 0;
-  background-color: transparent;
-}
-.bottom-section .bottom-container .bottom-left-section .bottom-left-overlay .bottom-left-overlay-inner h3 {
-  font-size: 2rem;
-  text-decoration: underline;
-  color: rgba(255, 255, 255, 0.7);
-  margin-top: 1rem;
-  background-color: transparent;
-}
-.bottom-section .bottom-container .bottom-left-section .bottom-left-overlay .bottom-left-overlay-inner p {
-  font-size: 1rem;
-  color: rgba(255, 255, 255, 0.7);
-  margin-top: 1rem;
-  background-color: transparent;
-}
-.bottom-section .bottom-container .bottom-right-section {
-  position: relative;
-  background: url("../img/blackvr.png") no-repeat bottom center / cover;
-  height: 500px;
-  margin-right: 5rem;
-}
-.bottom-section .bottom-container .bottom-right-section .bottom-right-overlay {
+.bottom-container .blackvrimg {
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-}
-.bottom-section .bottom-container .bottom-right-section .bottom-right-overlay .bottom-right-overlay-inner {
-  color: white;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin: auto;
-  max-width: 860px;
-  padding: 5rem 0;
-  background-color: transparent;
-}
-.bottom-section .bottom-container .bottom-right-section .bottom-right-overlay .bottom-right-overlay-inner h3 {
-  font-size: 2rem;
-  text-decoration: underline;
-  color: rgba(255, 255, 255, 0.7);
-  margin-top: 1rem;
-  background-color: transparent;
-}
-.bottom-section .bottom-container .bottom-right-section .bottom-right-overlay .bottom-right-overlay-inner p {
-  font-size: 1rem;
-  color: rgba(255, 255, 255, 0.7);
-  margin-top: 1rem;
-  background-color: transparent;
+  object-fit: cover;
 }
