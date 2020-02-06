@@ -6,11 +6,12 @@ footer {
   .footer-content {
     display: block;
     overflow: hidden;
-    padding: 70px 0;
+    padding: 60px 0;
     box-sizing: border-box;
     @media @mobile {
       display: flex;
       flex-direction: row;
+      padding: 40px 0;
     }
 
     .footer-inner {
@@ -187,5 +188,8 @@ footer {
     font-size: 1rem;
     color: @darkgray;
     padding: 30px;
+    @media @mobile {
+      padding: 10px;
+    }
   }
 }
