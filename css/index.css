@@ -356,7 +356,7 @@ footer p {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .top-section .overlay .top-section-inner {
   color: white;
@@ -413,6 +413,9 @@ footer p {
     display: flex;
     flex-wrap: wrap-reverse;
   }
+  .main-section .main-container img {
+    display: none;
+  }
 }
 .main-section h1 {
   font-size: 2rem;
@@ -448,6 +451,13 @@ footer p {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 500px) {
+  .bottom-section {
+    height: auto;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+}
 .bottom-section .bottom-left-section {
   width: 40%;
   position: relative;
@@ -455,6 +465,15 @@ footer p {
   flex: 1;
   transition: 0.6s ease-out;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 500px) {
+  .bottom-section .bottom-left-section {
+    flex: auto;
+    margin-bottom: 3rem;
+    object-fit: cover;
+    height: auto;
+    flex-wrap: wrap;
+  }
 }
 .bottom-section .bottom-left-section .bottom-left-overlay {
   align-items: center;
@@ -488,9 +507,27 @@ footer p {
   transition: 0.6s ease-out;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 }
+@media (max-width: 500px) {
+  .bottom-section .bottom-right-section {
+    flex: auto;
+    margin-bottom: 3rem;
+    object-fit: cover;
+    height: 45vh;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
 .bottom-section .bottom-right-section .bottom-right-overlay {
   align-items: center;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .bottom-section .bottom-right-section .bottom-right-overlay {
+    flex: auto;
+    height: auto;
+    width: 100%;
+    flex-wrap: wrap;
+  }
 }
 .bottom-section .bottom-right-section .bottom-right-overlay h3 {
   font-size: 2.5rem;
@@ -498,10 +535,22 @@ footer p {
   background-color: rgba(255, 255, 255, 0.1);
   color: #fff;
 }
+@media (max-width: 500px) {
+  .bottom-section .bottom-right-section .bottom-right-overlay h3 {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+}
 .bottom-section .bottom-right-section .bottom-right-overlay p {
   font-size: 18px;
   background-color: rgba(255, 255, 255, 0.1);
   color: #fff;
+}
+@media (max-width: 500px) {
+  .bottom-section .bottom-right-section .bottom-right-overlay p {
+    width: 100%;
+    font-size: 15px;
+  }
 }
 .bottom-section .bottom-right-section:hover {
   transform: translateY(15px);
