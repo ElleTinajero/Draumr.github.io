@@ -38,8 +38,11 @@
 
       a {
         color: @white;
-        padding: 0 1rem;
+        padding: 0 0.7rem;
         cursor: pointer;
+        @media @mobile {
+          padding: 0 1.5rem;
+        }
       }
 
       a:hover {
