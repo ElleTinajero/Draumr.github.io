@@ -207,18 +207,14 @@ img {
 }
 .navbar .nav-container .nav .button--login {
   padding: 0.4em 1em;
-  background: #40e0d0;
+  background: #444;
   color: #fff;
   border-radius: 10px;
   overflow: hidden;
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
 }
-.navbar .nav-container .nav .button--login.button--inverted {
-  background: #fff;
-  color: #40e0d0;
-}
-.navbar .nav-container .nav .button--login > span {
+.navbar .nav-container .nav .button--login span {
   display: inline-block;
   padding: 0;
   opacity: 0;
@@ -246,47 +242,47 @@ img {
 .navbar .nav-container .nav .button--login:hover {
   background-color: #40e0d0;
 }
-.navbar .nav-container .nav .button--login:hover::before {
-  opacity: 0;
-  -webkit-transform: translate3d(0, 100%, 0);
-  transform: translate3d(0, 100%, 0);
-}
-.navbar .nav-container .nav .button--login:hover > span {
+.navbar .nav-container .nav .button--login:hover span {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-.navbar .nav-container .nav .button--login:hover > span:nth-child(1) {
+.navbar .nav-container .nav .button--login:hover span:nth-child(1) {
   -webkit-transition-delay: 0.045s;
   transition-delay: 0.045s;
 }
-.navbar .nav-container .nav .button--login:hover > span:nth-child(2) {
+.navbar .nav-container .nav .button--login:hover span:nth-child(2) {
   -webkit-transition-delay: 0.09s;
   transition-delay: 0.09s;
 }
-.navbar .nav-container .nav .button--login:hover > span:nth-child(3) {
+.navbar .nav-container .nav .button--login:hover span:nth-child(3) {
   -webkit-transition-delay: 0.135s;
   transition-delay: 0.135s;
 }
-.navbar .nav-container .nav .button--login:hover > span:nth-child(4) {
+.navbar .nav-container .nav .button--login:hover span:nth-child(4) {
   -webkit-transition-delay: 0.18s;
   transition-delay: 0.18s;
 }
-.navbar .nav-container .nav .button--login:hover > span:nth-child(5) {
+.navbar .nav-container .nav .button--login:hover span:nth-child(5) {
   -webkit-transition-delay: 0.225s;
   transition-delay: 0.225s;
 }
-.navbar .nav-container .nav .button--login:hover > span:nth-child(6) {
+.navbar .nav-container .nav .button--login:hover span:nth-child(6) {
   -webkit-transition-delay: 0.27s;
   transition-delay: 0.27s;
 }
-.navbar .nav-container .nav .button--login:hover > span:nth-child(7) {
+.navbar .nav-container .nav .button--login:hover span:nth-child(7) {
   -webkit-transition-delay: 0.315s;
   transition-delay: 0.315s;
 }
-.navbar .nav-container .nav .button--login:hover > span:nth-child(8) {
+.navbar .nav-container .nav .button--login:hover span:nth-child(8) {
   -webkit-transition-delay: 0.36s;
   transition-delay: 0.36s;
+}
+.navbar .nav-container .nav .button--login:hover::before {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
 }
 footer {
   margin-top: 4rem;
