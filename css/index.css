@@ -205,15 +205,88 @@ img {
 .navbar .nav-container .nav a:hover {
   color: #777;
 }
-.navbar .nav-container .nav .login {
-  border: solid #40e0d0;
-  border-radius: 8px;
-  font-size: 14px;
-  padding: 10px;
+.navbar .nav-container .nav .button--login {
+  padding: 0.4em 1em;
+  background: #40e0d0;
+  color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
 }
-.navbar .nav-container .nav .login:hover {
+.navbar .nav-container .nav .button--login.button--inverted {
+  background: #fff;
+  color: #40e0d0;
+}
+.navbar .nav-container .nav .button--login > span {
+  display: inline-block;
+  padding: 0;
+  opacity: 0;
+  color: #444;
+  background-color: transparent;
+  -webkit-transform: translate3d(0, -10px, 0);
+  transform: translate3d(0, -10px, 0);
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+  transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+.navbar .nav-container .nav .button--login::before {
+  content: attr(data-text);
+  position: absolute;
+  top: auto;
+  left: auto;
+  padding-left: 12px;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+  transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+  color: #fff;
+}
+.navbar .nav-container .nav .button--login:hover {
   background-color: #40e0d0;
-  color: #1c1e20;
+}
+.navbar .nav-container .nav .button--login:hover::before {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+}
+.navbar .nav-container .nav .button--login:hover > span {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.navbar .nav-container .nav .button--login:hover > span:nth-child(1) {
+  -webkit-transition-delay: 0.045s;
+  transition-delay: 0.045s;
+}
+.navbar .nav-container .nav .button--login:hover > span:nth-child(2) {
+  -webkit-transition-delay: 0.09s;
+  transition-delay: 0.09s;
+}
+.navbar .nav-container .nav .button--login:hover > span:nth-child(3) {
+  -webkit-transition-delay: 0.135s;
+  transition-delay: 0.135s;
+}
+.navbar .nav-container .nav .button--login:hover > span:nth-child(4) {
+  -webkit-transition-delay: 0.18s;
+  transition-delay: 0.18s;
+}
+.navbar .nav-container .nav .button--login:hover > span:nth-child(5) {
+  -webkit-transition-delay: 0.225s;
+  transition-delay: 0.225s;
+}
+.navbar .nav-container .nav .button--login:hover > span:nth-child(6) {
+  -webkit-transition-delay: 0.27s;
+  transition-delay: 0.27s;
+}
+.navbar .nav-container .nav .button--login:hover > span:nth-child(7) {
+  -webkit-transition-delay: 0.315s;
+  transition-delay: 0.315s;
+}
+.navbar .nav-container .nav .button--login:hover > span:nth-child(8) {
+  -webkit-transition-delay: 0.36s;
+  transition-delay: 0.36s;
 }
 footer {
   margin-top: 4rem;
@@ -423,7 +496,7 @@ footer p {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .top-section .overlay .top-section-inner {
   color: white;
@@ -453,14 +526,14 @@ footer p {
 .top-section .overlay .top-section-inner h3 {
   font-family: sans-serif;
   font-size: 1.5rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.8);
   margin-top: 1rem;
   background-color: transparent;
 }
 .top-section .overlay .top-section-inner p {
   font-family: sans-serif;
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.8);
   margin-top: 1rem;
   background-color: transparent;
 }
